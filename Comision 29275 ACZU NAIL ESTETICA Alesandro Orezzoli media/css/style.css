@@ -26,6 +26,7 @@ header {
     justify-content: space-between;
     background-color: rgb(241, 211, 211);
     min-height: 15vh;
+    background-image: linear-gradient(to right, rgb(241, 211, 211), white );
     /* padding-bottom: 1em; */
 }
 
@@ -136,6 +137,7 @@ header nav ul li a {
     justify-content: center;
     display: flex;
     background-color: rgb(241, 211, 211, 0.956);
+    background-image: linear-gradient(to right, rgb(241, 211, 211), white )
 }
 
 /* tamaño de iconos de footer */
@@ -143,7 +145,7 @@ header nav ul li a {
     padding: 0 1rem;
 }
 
-.miPortafolio {
+.miPortafolio{
     display: block;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -242,6 +244,7 @@ header nav ul li a {
     border-radius: 3px;
     border: 1px solid;
 }
+
 
 /* Media QUERY - MOBILE LAST*/
 @media (max-width: 768px){ 
