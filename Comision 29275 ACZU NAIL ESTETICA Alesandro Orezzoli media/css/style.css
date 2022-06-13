@@ -1,0 +1,299 @@
+/* reseteo de margenes */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* estilo de body *//* Aplique grid en todo el body */
+body {
+    font-family: sans-serif;
+    background-color: white;
+    /* height: 100vh; */
+    position: relative;
+    /* padding-bottom: 3em; */
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem auto 4rem;
+}
+
+/* estilo de header */
+header {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(241, 211, 211);
+    min-height: 15vh;
+    /* padding-bottom: 1em; */
+}
+
+/* estilo de nav */
+nav {
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column-reverse;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+nav ul :hover {
+    background-color: rgb(245, 243, 243);
+}
+
+/* tamaño de mi main */
+main {
+    height: 70;
+}
+
+/* footer{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1em;
+    justify-content: center;
+} */
+
+/* estructura de mi footer */
+footer ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(8, 8, 19);
+    align-items: center;
+    margin: 15px;
+}
+
+.listaDesplegable {
+    display: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.listaDesplegable :hover {
+    background-color: rgb(138, 138, 138);
+}
+
+.listaPrimaria:hover>.listaDesplegable {
+    display: block;
+    position: absolute;
+}
+
+.imgFondo {
+    background-image: url(../img/blog_4_original-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.eslogan {
+    line-height: 25px;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main de servicio */
+.contenedorTabla{
+    display: grid;
+    /* background-color: rgba(249, 189, 189, 0.295) ; */
+    grid-template-columns: 220px 350px;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    grid-row-gap: 20px;
+    align-items: center;    
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    /* padding: 15px; */
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(241, 211, 211, 0.956);
+}
+
+/* tamaño de iconos de footer */
+.logos {
+    padding: 0 1rem;
+}
+
+.miPortafolio {
+    display: block;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    font-weight: bold;
+    border: solid black;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(167, 104, 104, 0.4);
+    width: 190px;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+    margin-top: 3rem;
+}
+
+/* estilo del quienes somos */
+.contenedorQuien{
+    width: 75%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: rgb(239, 162, 217);
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.tituloQuien{
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* mi portafolio */
+.contenedorEstilos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estilos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tamañoEstilos {
+    margin: 2rem;
+    width: 250px;
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.671);
+}
+
+.tituloPort{
+    font-size: 35px;
+    margin: 25px;
+}
+
+/* estilo del formulario */
+.box {
+    width: 350px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    background: rgb(239, 162, 217);
+    border-radius: 6px;
+    border: 1px solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    display: grid;
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* estilo titulo del formulario */
+.tituloFor {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* estilo contenido for*/
+.label{
+    margin: 3px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilo botones For */
+.boton{
+    width: 100%;
+    background-color: rgb(174, 218, 215);
+    font-size: 10px;
+    color: black;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+/* Media QUERY - MOBILE LAST*/
+@media (max-width: 768px){ 
+    nav {
+        /* align-items: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+        display: flex;
+        font-size: 15px;
+        /* flex-direction: column-reverse;
+        padding: 15px; */
+    }
+    .miPortafolio {
+        display: block;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        font-weight: bold;
+        border: solid black;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(167, 104, 104, 0.4);
+        width: 190px;
+        text-align: center;
+        margin: auto;
+        padding: 3px;
+        margin-top: 1rem;
+    }
+
+    .eslogan {
+        line-height: 20px;
+        padding: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: x-large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contenedorQuien{
+        width: 75%;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 6px;
+        background: rgb(239, 162, 217);
+        box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.6);
+        padding: 0.5rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .logo{
+        width: 150px;
+    }
+}
