@@ -106,7 +106,7 @@ header nav ul li a {
 .eslogan {
     line-height: 25px;
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -159,7 +159,10 @@ header nav ul li a {
     text-align: center;
     margin: auto;
     padding: 3px;
-    margin-top: 3rem;
+    margin-top: 7rem;
+}
+.miPortafolio:hover{
+    transform: scale(1.5);
 }
 
 /* estilo del quienes somos */
@@ -173,6 +176,10 @@ header nav ul li a {
     padding: 2rem;
     margin-top: 10rem;
     text-align: center;
+}
+.contenedorQuien:hover{
+    transition: 3s;
+    background-color: #8e2dfd;
 }
 
 .tituloQuien{
@@ -218,6 +225,10 @@ header nav ul li a {
     color: black;
     display: grid;
     box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.6);
+}
+.box:hover{
+    transform: 0.5s;
+    background-image: linear-gradient(to right, rgb(184, 26, 26), rgba(240, 231, 231, 0.6))
 }
 
 /* estilo titulo del formulario */
